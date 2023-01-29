@@ -7,3 +7,6 @@ We split up into two subteams: front end and back end. The back end team focused
 
 ## How to run 
 Launch `index.html` with your browse. Once there, select a "Location" from the dropdown. The dropdown menu is ordered by Locations suffering the worst reviews. Each summary will display the top issue of said location and offer a download link to all the raw reviews that were used to determine the severity of this location's reviews.
+
+###Alternatively 
+https://tamuhack-test-1.jar448.repl.co
