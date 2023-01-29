@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ISSUE</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      margin-left: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #0071C5;
+      color: #ffffff;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>ISSUE</h1>
+  <div id="summary">
+<h2>Summary</h2>
+<div id="output"></div>
+    <button onclick="location.href='index.html'">Back to Menu</button>
+    <br>
+    <br>
+    <iframe id="csv-frame" style="width: 100%; height: 100%"></iframe>
+    <script>
+      // Fetch the CSV file
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "sumReviews.csv", true);
+      xhr.responseType = "text";
+      xhr.onload = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          // Convert the CSV file to a list
+          var csvData = xhr.response;
+          var lines = csvData.split("\n");
+          var csvList = [];
+          for (var i = 0; i < lines.length; i++) {
+            csvList.push(lines[i].split(","));
+          }
+
+          // Display the list in the iframe
+          var iframe = document.getElementById("csv-frame");
+          var doc = iframe.contentDocument;
+          var list = doc.createElement("ul");
+          for (var i = 0; i < csvList.length; i++) {
+            var item = doc.createElement("li");
+            item.innerHTML = csvList[i].join(", ");
+            list.appendChild(item);
+          }
+          doc.body.appendChild(list);
+        }
+      };
+      xhr.send();
+    </script>
+</body>
+
+</html>

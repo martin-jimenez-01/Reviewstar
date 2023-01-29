@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>ReviewStar.tech</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1>Welcome to ReviewStar.tech</h1>
+
+  <h2>Location</h2>
+  <label for="airports">
+  </label>
+
+  <div id="clouds1" style="position: absolute;z-index: -1;"></div>
+
+
+
+  <select id="airports" name="airports">
+    <option value="texas">-Select- (Rated Worst to Best)</option>
+    <option value="LAX">Los Angeles (LAX)</option>
+    <option value="DFW">Dallas Fort Worth (DFW)</option>
+    <option value="ORD">Chicago (ORD)</option>
+    <option value="PHX">Phoenix (PHX)</option>
+    <option value="MIA">Miami (MIA)</option>
+    <option value="SFO">San Francisco (SFO)</option>
+    <option value="CLT">Charlotte (CLT)</option>
+    <option value="SAN">San Diego (SAN)</option>
+    <option value="JFK">New York City (JFK)</option>
+    <option value="SEA">Seattle (SEA)</option>
+    <option value="MCO">Orlando (MCO)</option>
+    <option value="IAH">Houston (IAH)</option>
+    <option value="DEN">Denver (DEN)</option>
+    <option value="EWR">Newark (EWR)</option>
+    <option value="ATL">Atlanta (ATL)</option>
+    <option value="BWI">Baltimore (BWI)</option>
+    <option value="SLC">Salt Lake City (SLC)</option>
+    <option value="PHL">Philadelphia (PHL)</option>
+    <option value="DTW">Detroit (DTW)</option>
+    <option value="TPA">Tampa (TPA)</option>
+    <option value="FLL">Fort Lauderdale (FLL)</option>
+    <option value="GSO">Greensboro (GSO)</option>
+    <option value="MSP">Minneapolis (MSP)</option>
+  </select>
+  <div style="display: flex;">
+    <div style="flex: 1;">
+      <div id="map" style="width: 95%; height: 400px;"></div>
+    </div>
+    <div style="flex: 1;">
+      <h2>Top Issues</h2>
+      <ul>
+
+
+        <nav class="panel">
+          <p class="panel-heading" , style="font-family: sans-serif">
+            Summary
+          </p>
+          <p style="font-family: sans-serif">
+            <iframe id="csv-frame" style="width: 95%; height: 100%"></iframe>
+          </p>
+
+          <div class="panel-block">
+            <a href="Atlanta1.html" download><button class="button is-link is-outlined is-fullwidth" id="ATL-button-1"
+                style="display:none;">Atlanta Issue 1</button></a>
+          </div>
+
+
+          <div class="panel-block">
+            <a href="baltimore1.html"><button class="button is-link is-outlined is-fullwidth" id="BWI-button-1"
+                style="display:none;">Baltimore Issue 1</button></a>
+          </div>
+
+
+
+          <div class="panel-block">
+            <a href="charlotte1.html"><button class="button is-link is-outlined is-fullwidth" id="CLT-button-1"
+                style="display:none;">Charlotte Issue 1</button></a>
+          </div>
+
+          <div class="panel-block">
+            <a href="chicago1.html"><button class="button is-link is-outlined is-fullwidth" id="ORD-button-1"
+                style="display:none;">Chicago Issue 1</button></a>
+          </div>
+
+
+
+          <div class="panel-block">
+            <a href="dallasFortWorth1.html"><button class="button is-link is-outlined is-fullwidth" id="DFW-button-1"
+                style="display:none;">Dallas Fort Worth Issue 1</button></a>
+          </div>
+
+
+
+          <div class="panel-block">
+            <a href="denver1.html"><button class="button is-link is-outlined is-fullwidth" id="DEN-button-1"
+                style="display:none;">Denver Issue 1</button></a>
+          </div>
+
+          <div class="panel-block">
+            <a href="detroit1.html"><button class="button is-link is-outlined is-fullwidth" id="DTW-button-1"
+                style="display:none;">Detroit Issue 1</button></a>
+          </div>
+
+
+
+          <div class="panel-block">
+            <a href="fortLauderdale1.html"><button class="button is-link is-outlined is-fullwidth" id="FLL-button-1"
+                style="display:none;">Fort Lauderdale Issue 1</button></a>
+          </div>
+
+
+
+          <div class="panel-block">
+            <a href="greensboro1.html"><button class="button is-link is-outlined is-fullwidth" id="GSO-button-1"
+                style="display:none;">Greensboro Issue 1</button></a>
+          </div>
+
+
+          <div class="panel-block">
+            <a href="houston1.html"><button class="button is-link is-outlined is-fullwidth" id="IAH-button-1"
+                style="display:none;">Houston Issue 1</button></a>
+          </div>
+
+
+
+          <div class="panel-block">
+            <a href="losAngeles1.html"><button class="button is-link is-outlined is-fullwidth" id="LAX-button-1"
+                style="display:none;">Los Angeles Issue 1</button></a>
+          </div>
+
+
+
+          <div class="panel-block">
+            <a href="miami1.html"><button class="button is-link is-outlined is-fullwidth" id="MIA-button-1"
+                style="display:none;">Miami Issue 1</button></a>
+          </div>
+
+
+
+
+          <div class="panel-block">
+            <a href="minneapolis1.html"><button class="button is-link is-outlined is-fullwidth" id="MSP-button-1"
+                style="display:none;">Minneapolis Issue 1</button></a>
+          </div>
+
+
+
+          <div class="panel-block">
+            <a href="newYorkCity1.html"><button class="button is-link is-outlined is-fullwidth" id="JFK-button-1"
+                style="display:none;">New York City Issue 1</button></a>
+          </div>
+
+
+          <div class="panel-block">
+            <a href="newark1.html"><button class="button is-link is-outlined is-fullwidth" id="EWR-button-1"
+                style="display:none;">Newark Issue 1</button></a>
+          </div>
+
+
+
+          <div class="panel-block">
+            <a href="orlando1.html"><button class="button is-link is-outlined is-fullwidth" id="MCO-button-1"
+                style="display:none;">Orlando Issue 1</button></a>
+          </div>
+
+
+
+          <div class="panel-block">
+            <a href="philadelphia1.html"><button class="button is-link is-outlined is-fullwidth" id="PHL-button-1"
+                style="display:none;">Philadelphia Issue 1</button></a>
+          </div>
+
+
+
+
+          <div class="panel-block">
+            <a href="phoenix1.html"><button class="button is-link is-outlined is-fullwidth" id="PHX-button-1"
+                style="display:none;">Phoenix Issue 1</button></a>
+          </div>
+
+
+
+          <div class="panel-block">
+            <a href="saltLakeCity1.html"><button class="button is-link is-outlined is-fullwidth" id="SLC-button-1"
+                style="display:none;">Salt Lake City Issue 1</button></a>
+          </div>
+
+
+
+          <div class="panel-block">
+            <a href="sanDiego1.html"><button class="button is-link is-outlined is-fullwidth" id="SAN-button-1"
+                style="display:none;">San Diego Issue 1</button></a>
+          </div>
+
+
+          <div class="panel-block">
+            <a href="sanFrancisco1.html"><button class="button is-link is-outlined is-fullwidth" id="SFO-button-1"
+                style="display:none;">San Francisco Issue 1</button></a>
+          </div>
+
+
+
+          <div class="panel-block">
+            <a href="seattle1.html"><button class="button is-link is-outlined is-fullwidth" id="SEA-button-1"
+                style="display:none;">Seattle Issue 1</button></a>
+          </div>
+
+
+
+          <div class="panel-block">
+            <a href="tampa1.html"><button class="button is-link is-outlined is-fullwidth" id="TPA-button-1"
+                style="display:none;">Tampa Issue 1</button></a>
+          </div>
+
+
+        </nav>
+      </ul>
+
+
+
+
+    </div>
+  </div>
+
+
+
+  <!--  Script for the airport maps !-->
+  <script>
+    const clouds = document.querySelectorAll('.cloud');
+    clouds.forEach(cloud => {
+      const randomLeft = Math.floor(Math.random() * 100);
+      const randomTop = Math.floor(Math.random() * 100);
+      cloud.style.left = `${randomLeft}%`;
+      cloud.style.top = `-${randomTop}px`;
+    });
+  </script>
+
+  <script>
+    var map;
+    var airports = {
+      "ATL": {lat: 33.6367, lng: -84.428101},
+      "BWI": {lat: 39.1754, lng: -76.668101},
+      "CLT": {lat: 35.214, lng: -80.943604},
+      "ORD": {lat: 41.9742, lng: -87.9073},
+      "DFW": {lat: 32.896801, lng: -97.038002},
+      "DEN": {lat: 39.861698, lng: -104.672997},
+      "DTW": {lat: 42.212398, lng: -83.353401},
+      "FLL": {lat: 26.072599, lng: -80.152702},
+      "GSO": {lat: 36.097801, lng: -79.937302},
+      "IAH": {lat: 29.984300, lng: -95.341400},
+      "LAX": {lat: 33.942501, lng: -118.407997},
+      "MIA": {lat: 25.793200, lng: -80.290604},
+      "MSP": {lat: 44.881901, lng: -93.221802},
+      "JFK": {lat: 40.639751, lng: -73.778925},
+      "EWR": {lat: 40.6895, lng: -74.1745},
+      "MCO": {lat: 28.428101, lng: -81.3168},
+      "PHL": {lat: 39.871899, lng: -75.2411},
+      "PHX": {lat: 33.434299, lng: -112.012001},
+      "SLC": {lat: 40.788398, lng: -111.977997},
+      "SAN": {lat: 32.733600, lng: -117.189995},
+      "SFO": {lat: 37.619999, lng: -122.370003},
+      "SEA": {lat: 47.449009, lng: -122.308899},
+      "TPA": {lat: 27.975500, lng: -82.533203}
+    };
+
+    function initMap() {
+      // Create the map and set the initial zoom level
+      map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 6
+      });
+
+      // Center the map on Texas
+      var texas = {lat: 31.9686, lng: -99.9018};
+      map.panTo(texas);
+      map.setZoom(6);
+
+      // Add markers for each airport
+      for (var key in airports) {
+        var marker = new google.maps.Marker({
+          position: airports[key],
+          map: map,
+          title: key
+        });
+      }
+
+      // Add markers for each airport
+      for (var key in airports) {
+        var marker = new google.maps.Marker({
+          position: airports[key],
+          map: map,
+          title: key
+        });
+      }
+
+      // Add event listener to dropdown menu
+      document.getElementById("airports").onchange = function () {
+        var selected = this.value;
+        var location = airports[selected];
+        if (selected === "texas") {
+          map.panTo({lat: 31.9686, lng: -99.9018});
+          map.setZoom(6);
+        } else {
+          map.panTo(location);
+          map.setZoom(12);
+        }
+
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map,
+          title: selected
+        });
+      }
+    }
+  </script>
+  <script>
+    document.getElementById("airports").onchange = function () {
+      var selected = this.value;
+      var rating = "Rating: " + ratings[selected];
+      document.getElementById("rating").innerHTML = rating;
+    }
+  </script>
+
+
+
+
+
+  <script>
+    document.querySelector("#airports").addEventListener("change", function () {
+      var issueButtons = document.querySelectorAll(".panel-block button");
+      issueButtons.forEach(function (button) {
+        button.style.display = "none";
+      });
+
+      if (this.value === "ATL") {
+        document.querySelector("#ATL-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Atlanta-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "BWI") {
+
+        document.querySelector("#BWI-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Baltimore-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "CLT") {
+        document.querySelector("#CLT-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Charlotte-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "ORD") {
+        document.querySelector("#ORD-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Chicago-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "DFW") {
+        document.querySelector("#DFW-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Dallas-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "DEN") {
+        document.querySelector("#DEN-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Denver-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "DTW") {
+        document.querySelector("#DTW-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Detroit-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "FLL") {
+        document.querySelector("#FLL-button-1").style.display = "block";
+      }
+      else if (this.value === "GSO") {
+        document.querySelector("#GSO-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Fort-Lauderdale-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "IAH") {
+        document.querySelector("#IAH-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Houston-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "LAX") {
+        document.querySelector("#LAX-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Los-Angeles-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "MIA") {
+        document.querySelector("#MIA-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Miami-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "MSP") {
+        document.querySelector("#MSP-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Minniapolis-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "JFK") {
+        document.querySelector("#JFK-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Jamaica-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "EWR") {
+        document.querySelector("#EWR-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "Newark.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "MCO") {
+        document.querySelector("#MCO-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Orlando-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "PHL") {
+        document.querySelector("#PHL-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Philadelphia-6-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "PHX") {
+        document.querySelector("#PHX-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Phoenix-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "SLC") {
+        document.querySelector("#SLC-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Salt-Lake-City-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "SAN") {
+        document.querySelector("#SAN-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/San-Diego-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "SFO") {
+        document.querySelector("#SFO-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/San-Fransisco-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "SEA") {
+        document.querySelector("#SEA-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "CSVs/Seattle-summary.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      else if (this.value === "TPA") {
+        document.querySelector("#TPA-button-1").style.display = "block";
+        // Fetch the CSV file
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "sumReviews.csv", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Convert the CSV file to a list
+            var csvData = xhr.response;
+            var lines = csvData.split("\n");
+            var csvList = [];
+            for (var i = 0; i < lines.length; i++) {
+              csvList.push(lines[i].split(","));
+            }
+
+            // Display the list in the iframe
+            var iframe = document.getElementById("csv-frame");
+            var doc = iframe.contentDocument;
+            var list = doc.createElement("ul");
+            for (var i = 0; i < csvList.length; i++) {
+              var item = doc.createElement("li");
+              item.innerHTML = csvList[i].join(", ");
+              list.appendChild(item);
+            }
+            doc.body.appendChild(list);
+          }
+        };
+        xhr.send();
+      }
+      // add more else if statements for other airports
+    });
+  </script>
+
+
+
+
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFpgSDOCeR6bQqpZwcTRCDuwjbSJMb48Y&callback=initMap">
+    </script>
+
+  <div id="background-wrap">
+    <div class="x1">
+      <div class="cloud"></div>
+    </div>
+
+    <div class="x2">
+      <div class="cloud"></div>
+    </div>
+
+    <div class="x3">
+      <div class="cloud"></div>
+    </div>
+
+    <div class="x4">
+      <div class="cloud"></div>
+    </div>
+
+    <div class="x5">
+      <div class="cloud"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
